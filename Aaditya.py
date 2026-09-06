@@ -250,11 +250,11 @@
 # employee("aaditya","kalbhor")
 
 # Simple Input and Output Example
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-print(f"Hello {name}!")
-print(f"You are {age} years old.")
-print("Welcome to Learning Python!")
+# name = input("Enter your name: ")
+# age = int(input("Enter your age: "))
+# print(f"Hello {name}!")
+# print(f"You are {age} years old.")
+# print("Welcome to Learning Python!")
 # employee("aaditya")
 
 # def name():
@@ -281,4 +281,193 @@ print("Welcome to Learning Python!")
 
 # def arithmetic(x):
 #    return 5*x
-# print
+# print(arithmetic(3))
+
+
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
+# if a >= b :
+#     print("True")
+# else:
+#     print("False")
+
+# for i in range(10):
+#     print(i)
+
+# while loop in python
+# i = 1
+# while i <= 10:
+#     print ("i am boss")
+#     i += 1
+
+# i = 10
+# while i >= 1:
+#     print(i)
+#     i -= 1
+# print("done")
+
+# i = 1
+# while i <= 100:
+#     print(i)
+#     i += 1
+
+# i = 100
+# while i >= 1:
+#     print(i)
+#     i -= 1
+
+# multiplaction table using while loop
+# n = int(input("Enter a number: "))
+# i = 1
+# while i <= 10:
+#     print(n*i)
+#     i += 1
+
+# nums = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+# i = 0
+# while i < len(nums):
+#     print(nums[i])
+#     i += 1
+
+# nums = (1, 4, 9, 16, 25, 36, 49, 64, 25, 81, 100)
+
+# x =int (input("Enter a number: "))
+# i = 0
+# while i < len(nums):
+#     if nums[i] == x:
+#         print("found at index", i)
+#     else:
+#         print("not found")
+#     i += 1
+
+# i = 1
+# while i <= 10:
+#     print(i)
+#     if i == 5:
+#      break
+#     i += 1
+# print("done")
+
+# str = "hello world"
+# for char in str:
+#     print(char)
+
+# nums = [1,4,9,16,25,36,49,64,81,100,49]
+# x = int(input("Enter a number: "))
+
+# index = 0
+# for el in nums:
+#     if (el == x):
+#         print("found at index", index)
+#         break
+#     index += 1
+
+# start stop step in range function
+# for i in range(10):   
+#     print(i)
+
+# for i in range(2, 10):    
+#     print(i)
+
+# for i in range(2, 10, 2):
+#     print(i)
+
+# printing even no.
+# for i in range(2, 101, 2):
+#     print(i)
+
+# # printing odd no.
+# for i in range(1, 101, 2):
+#     print(i)
+
+# function and function calling in python
+# def cal_sum(a,b):
+#     sum  = a+b
+#     print(sum)
+#     return sum
+
+# cal_sum(10,20)
+
+
+# cal_sum(30,40)
+
+
+# cal_sum(50,60)
+
+# def cal_sum(a,b):
+#     return a + b
+
+# sum = cal_sum(6269,206489) 
+# print(sum)
+
+# def print_hello():
+#     print("hello")
+
+# print_hello()
+
+# # calculating the avg of 3 numbers using function   
+# def calc_avg(a,b,c):
+#     sum = a+b+c
+#     avg = sum/3
+#     return avg
+
+# avg = calc_avg(10,20,30)
+# print("Average:", avg)
+
+# cities = ["pune", "mumbai", "delhi", "bangalore"]
+# heroes = ["ironman", "spiderman", "batman", "thor"]
+
+# print(heroes[0], end=" ")
+
+# def print_len(list):
+#     print(len(list))
+
+# def print_list(list):
+#     for item in list:
+#         print(item, end=" ")
+#     print()
+
+# print_list(cities)
+# print_list(heroes)
+
+# INR TO USD converter USING FUNCTION
+# def conveter(usd_val):
+#     inr_val = usd_val * 82.74
+#     print(usd_val, "USD =", inr_val, "INR")
+
+# conveter(73)
+
+# def check_number(num):
+#     if num % 2 == 0:
+#         print(num, "is EVEN")
+#     else:
+#         print(num, "is ODD")
+
+# num = int(input("Enter a number: "))
+# check_number(num)
+
+# def show(n):
+#     if(n==0):
+#         return
+#     print(n) 
+#     show(n-1)
+
+# show(3)
+
+# def cal_sum(n):
+#     if n == 0:
+#         return 0
+#     print(n)
+#     return cal_sum(n-1) + n
+
+# sum = cal_sum(5)
+# print("Sum:", sum)  
+
+def print_list(list, idx):
+    if idx == len(list):
+        return
+    print(list[idx])
+    print_list(list, idx +1)
+
+fruits = ["apple", "banana", "cherry", "date"]
+print_list(fruits, 0)
